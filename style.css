@@ -1,0 +1,74 @@
+html {
+  --color-accent: oklch(65% 50% 0)
+}
+
+body {
+    /* Set line height to 1.5 times the font size
+       and use the OS’s UI font as the website font
+     */
+    font: 100%/1.5 system-ui;
+    max-width: 50ch;
+    margin-inline: auto;
+    padding: 5%;
+    accent-color: var(--color-accent);
+    }
+
+ul {
+    display: contents;
+    }
+
+li {
+    display: contents;
+    }
+
+nav {
+    display: flex;
+    margin-bottom: 0.5em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: oklch(80% 3% 200);
+    }
+
+a {
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  padding: 0.5em;
+    }
+
+a.current {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: oklch(80% 3% 200);
+  padding-bottom: 0.25em;
+    }
+
+img {
+    max-width: 50ch;
+}
+form {
+  display: grid;
+  grid-template-columns: auto 1fr
+}
+input {
+  font:inherit;
+  /* display: block;
+  width: 100%;
+  box-sizing: border-box; */
+}
+textarea {
+  font:inherit;
+  /* display: block;
+  width: 100%;
+  box-sizing: border-box; */
+}
+button {
+  font:inherit;
+  /* display: block;
+  width: 100%;
+  box-sizing: border-box; */
+}
+label {
+  margin-block: 5% 2%;
+}
