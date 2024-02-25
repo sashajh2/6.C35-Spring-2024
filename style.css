@@ -1,5 +1,6 @@
 html {
-  --color-accent: oklch(65% 50% 0)
+  --color-accent: oklch(65% 50% 0);
+  color-scheme: light dark;
 }
 
 body {
@@ -23,11 +24,12 @@ li {
     }
 
 nav {
+    --border-color: oklch(50% 10% 200 / 40%);
     display: flex;
     margin-bottom: 0.5em;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: oklch(80% 3% 200);
+    border-bottom-color: var(--border-color);
     }
 
 a {
@@ -66,6 +68,10 @@ textarea {
 button {
   font-family: inherit;
   width: 100%;
+}
+select {
+  font-family: inherit;
+  font-size: 80%;
 }
 label {
   margin-block: 5% 2%;
