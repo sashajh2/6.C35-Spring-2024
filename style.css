@@ -7,7 +7,7 @@ body {
        and use the OS’s UI font as the website font
      */
     font: 100%/1.5 system-ui;
-    max-width: 50ch;
+    max-width: 100ch;
     margin-inline: auto;
     padding: 5%;
     accent-color: var(--color-accent);
@@ -19,6 +19,7 @@ ul {
 
 li {
     display: contents;
+    color: inherit
     }
 
 nav {
@@ -44,31 +45,71 @@ a.current {
   padding-bottom: 0.25em;
     }
 
+a.hover {
+  accent-color: var(--color-accent);
+}
+
 img {
-    max-width: 50ch;
+  max-width: 100%
 }
 form {
   display: grid;
-  grid-template-columns: auto 1fr
+  gap: 1em;
+  grid-template-columns: auto 1fr;
 }
 input {
-  font:inherit;
-  /* display: block;
-  width: 100%;
-  box-sizing: border-box; */
+  font-family: inherit;
 }
 textarea {
-  font:inherit;
-  /* display: block;
-  width: 100%;
-  box-sizing: border-box; */
+  font-family: inherit;
 }
 button {
-  font:inherit;
-  /* display: block;
+  font-family: inherit;
   width: 100%;
-  box-sizing: border-box; */
 }
 label {
   margin-block: 5% 2%;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+article {
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+}
+
+h1 {
+  line-height: 1.1;
+}
+h2 {
+  line-height: 1.1;
+  margin: 0;
+}
+h3 {
+  line-height: 1.1;
+}
+h4{
+  line-height: 1.1;
+}
+h5 {
+  line-height: 1.1;
+}
+h6 {
+  line-height: 1.1;
+}
+.image-row {
+  width: 100%;
+  box-sizing: border-box;
+}
+.image-row img {
+  margin-right: 20px;
+  width: 30%;
+}
+.image-row-2 {
+  width: 100%;
+  box-sizing: border-box;
+}
+.image-row-2 img {
+  margin-right: 20px;
+  width: 45%;
 }
