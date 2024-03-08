@@ -167,3 +167,21 @@ tfoot th {
 tfoot td {
   font-weight: bold;
 }
+
+.two-column-list {
+  column-count: 2; /* Set the number of columns */
+  column-gap: 20px; /* Adjust the gap between columns */
+  list-style-type: none;
+  padding: 0;
+}
+
+.two-column-list li {
+  margin-bottom: 10px;
+}
+
+.image-container img {
+  display: inline-block;
+  width: 50%; /* Adjust the width as needed */
+  vertical-align: top; /* Align images at the top */
+  /* Add any other styling you want */
+}
